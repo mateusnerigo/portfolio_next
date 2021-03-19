@@ -1,17 +1,31 @@
 import Head from 'next/head';
 
-import { Navbar } from '../components/Navbar';
-
 import styles from '../styles/pages/Home.module.css';
+
+import { Navbar } from '../components/Navbar';
+import { Info } from '../components/Info';
+import { About } from '../components/About';
+import { Portfolio } from '../components/Portfolio';
+import { Experiments } from '../components/Experiments';
+import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
 
 function App() {
 	return (
-		<div className={ styles.container }>
+		<div className={ `${styles.homeContainer}` }>
 			<Head>
 				<title>Home | Mateus Neri</title>
 			</Head>
 
 			<Navbar />
+			
+			<Info />
+			<About />
+			<Portfolio />
+			<Experiments />
+			<Contact />
+
+			<Footer />
 		</div>
 	);
 }

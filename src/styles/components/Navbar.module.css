@@ -1,8 +1,10 @@
 .navbarContainer {
+  position: fixed;
+  top: 20px;
   width: 100%;
   height: 125px;
   margin: 0 auto;
-  transition: 1s
+  transition: 0.2s;
 }
 
 .navbar {
@@ -16,13 +18,12 @@
   align-items: center;
   justify-content: space-between;
   color: var(--white);
-  transition: 0.3s
+  transition: 0.2s
 }
 
 .navbarContainer.fixed, 
 .navbar.fixed {
   height: 80px;
-  position: sticky;
   top: 0;
   color: var(--black);
 }

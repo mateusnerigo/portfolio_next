@@ -12,12 +12,10 @@ export function Navbar() {
     if (offset > 1) {
       setNavbarContainerToggle(`${styles.navbarContainer} ${styles.fixed}`)
       setNavbarToggle(`${styles.navbar} ${styles.fixed}`)
-      console.log(offset)
     }
     else { 
       setNavbarContainerToggle(`${styles.navbarContainer}`)
       setNavbarToggle(`${styles.navbar}`)
-      console.log(offset)
     }
   }
 
@@ -34,27 +32,27 @@ export function Navbar() {
 
         <nav>
           <a href="#">
-            Home 
+            /home 
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#">
-            About 
+            /about 
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#">
-            Portfolio 
+            /portfolio 
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#">
-            Experiences 
+            /experiments 
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#">
-            Contact 
+            /contact 
           </a>
         </nav>
       </div>

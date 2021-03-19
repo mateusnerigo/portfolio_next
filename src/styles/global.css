@@ -26,6 +26,11 @@
   }
 }
 
+body {
+  font: 400 1rem 'Raleway', sans-serif;
+  background: var(--white);
+}
+
 button {
    cursor: pointer;
 }
@@ -33,4 +38,14 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  max-width: 992px;
+  padding: 30px;
+  padding-top: 80px;
+  margin: 0 auto;
+  color: var(--black);
 }
