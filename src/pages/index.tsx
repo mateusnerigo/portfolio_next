@@ -14,7 +14,7 @@ function App() {
 	return (
 		<div className={ `${styles.homeContainer}` }>
 			<Head>
-				<title>Home | Mateus Neri</title>
+				<title>Mateus Neri | Home</title>
 			</Head>
 
 			<Navbar />
