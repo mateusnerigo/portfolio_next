@@ -1,0 +1,91 @@
+.navbarContainer {
+  width: 100%;
+  height: 125px;
+  margin: 0 auto;
+  transition: 1s
+}
+
+.navbar {
+  max-width: 992px;
+  height: 100%;
+  margin: 0 auto;
+  
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--white);
+  transition: 0.3s
+}
+
+.navbarContainer.fixed, 
+.navbar.fixed {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  color: var(--black);
+}
+
+.navbarContainer.fixed {
+  background: var(--white);
+}
+
+.navbarContainer .logo {
+  font: 400 2rem 'Raleway', sans-serif;
+  flex: 1;
+}
+
+.navbarContainer nav {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.navbarContainer nav a {
+  font: 400 0.9rem 'Oxygen', sans-serif;
+  position: relative;
+}
+
+.navbarContainer nav a .underline {
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background: var(--white);
+  opacity: 0.5;
+  transition: 0.3s
+}
+
+.navbar.fixed nav a .underline {
+  background: var(--black)
+}
+
+.navbarContainer nav a:hover .underline {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.navbarContainer nav a:last-child {
+  padding: 10px 20px;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.navbarContainer nav a:last-child:hover {
+  background: var(--transparent-white);
+}
+
+.navbar.fixed nav a:last-child {
+  background: var(--black);
+  color: var(--white);
+}
