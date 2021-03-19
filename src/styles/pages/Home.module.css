@@ -1,9 +1,9 @@
 .container {
-  height: 300vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(
     45deg, 
-    var(--pink), 
-    var(--purple)
+    var(--dark-purple), 
+    var(--black)
   );
 }
