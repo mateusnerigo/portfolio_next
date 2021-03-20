@@ -11,7 +11,7 @@
   max-width: 992px;
   height: 100%;
   margin: 0 auto;
-  
+
   padding: 10px 30px;
   display: flex;
   flex-direction: row;
@@ -21,7 +21,7 @@
   transition: 0.2s
 }
 
-.navbarContainer.fixed, 
+.navbarContainer.fixed,
 .navbar.fixed {
   height: 80px;
   top: 0;
@@ -57,7 +57,7 @@
   bottom: -2.5px;
   left: 0;
   width: 0%;
-  height: 1.5px;
+  height: 1px;
   background: var(--white);
   opacity: 0.5;
   transition: 0.3s
@@ -67,7 +67,8 @@
   background: var(--black)
 }
 
-.navbarContainer nav a:hover .underline {
+.navbarContainer nav a:hover .underline,
+.navbarContainer nav a:active .underline {
   width: 100%;
   opacity: 0.7;
 }
@@ -89,4 +90,8 @@
 .navbar.fixed nav a:last-child {
   background: var(--black);
   color: var(--white);
+}
+
+.navbar.fixed nav a:last-child:hover {
+  background: var(--dark-purple);
 }

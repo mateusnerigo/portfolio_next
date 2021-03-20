@@ -13,7 +13,7 @@ export function Navbar() {
       setNavbarContainerToggle(`${styles.navbarContainer} ${styles.fixed}`)
       setNavbarToggle(`${styles.navbar} ${styles.fixed}`)
     }
-    else { 
+    else {
       setNavbarContainerToggle(`${styles.navbarContainer}`)
       setNavbarToggle(`${styles.navbar}`)
     }
@@ -23,7 +23,7 @@ export function Navbar() {
     window.addEventListener('scroll', handleScroll);
   })
 
-  return ( 
+  return (
     <div className={ navbarContainerToggle }>
       <div className={ navbarToggle }>
         <div className={ styles.logo }>
@@ -31,28 +31,28 @@ export function Navbar() {
         </div>
 
         <nav>
-          <a href="#">
-            /home 
+          <a href="#home">
+            /home
             <div className={ styles.underline }></div>
           </a>
 
-          <a href="#">
-            /about 
+          <a href="#about">
+            /about
             <div className={ styles.underline }></div>
           </a>
 
-          <a href="#">
-            /portfolio 
+          <a href="#portfolio">
+            /portfolio
             <div className={ styles.underline }></div>
           </a>
 
-          <a href="#">
-            /experiments 
+          <a href="#experiments">
+            /experiments
             <div className={ styles.underline }></div>
           </a>
 
-          <a href="#">
-            /contact 
+          <a href="#contact">
+            /contact
           </a>
         </nav>
       </div>
