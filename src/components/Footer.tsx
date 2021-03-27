@@ -3,10 +3,6 @@ import styles from '../styles/components/Footer.module.css';
 export function Footer() {
   return (
     <div className={ styles.footerContainer }>
-      <p>
-        mateus neri - web developer
-      </p>
-
       <div className={ styles.footerLinks }>
         <a href="#">fb</a>
         <a href="#">wpp</a>

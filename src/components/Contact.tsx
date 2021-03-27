@@ -6,7 +6,7 @@ export function Contact() {
       id="contact"
       className={ `container ${styles.contactContainer}` }
     >
-      <h1 className="sectionTitle">/contact</h1>
+      <h1 className="sectionTitle">Contact</h1>
 
       <form className={ styles.contactForm }>
         <div className={ styles.contactFormField }>

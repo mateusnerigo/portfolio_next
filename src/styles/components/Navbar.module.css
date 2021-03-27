@@ -23,7 +23,7 @@
 
 .navbarContainer.fixed,
 .navbar.fixed {
-  height: 80px;
+  height: 90px;
   top: 0;
   color: var(--black);
 }
@@ -109,4 +109,15 @@
 
 .navbar.fixed nav a:last-child:hover {
   background: var(--dark-purple);
+}
+
+
+@media(max-width: 720px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbarContainer nav {
+    width: 70vw;
+  }
 }
