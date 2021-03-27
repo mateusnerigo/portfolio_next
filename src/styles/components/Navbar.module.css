@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  max-width: 992px;
+  max-width: 1260px;
   height: 100%;
   margin: 0 auto;
 
@@ -33,8 +33,23 @@
 }
 
 .navbarContainer .logo {
-  font: 400 2rem 'Raleway', sans-serif;
   flex: 1;
+}
+
+.navbarContainer .logo a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbarContainer .logo a .name {
+  font: 400 1.5rem 'Oxygen', sans-serif;
+}
+
+.navbarContainer .logo a .function {
+  font: 300 1.34rem 'Raleway', sans-serif;
+  line-height: 50%;
+  letter-spacing: 0.02rem;
 }
 
 .navbarContainer nav {
@@ -48,7 +63,7 @@
 
 
 .navbarContainer nav a {
-  font: 400 0.9rem 'Oxygen', sans-serif;
+  font: 400 1.175rem 'Oxygen', sans-serif;
   position: relative;
 }
 

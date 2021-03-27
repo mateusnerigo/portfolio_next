@@ -1,4 +1,18 @@
 .infoContainer {
   height: 95vh;
   padding-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 50px
 }
+
+.infoContainer span {
+  color: white;
+  font: 400 6.5rem 'Oxygen';
+  text-align: right;
+}
+
+

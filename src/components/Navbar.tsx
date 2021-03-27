@@ -27,32 +27,35 @@ export function Navbar() {
     <div className={ navbarContainerToggle }>
       <div className={ navbarToggle }>
         <div className={ styles.logo }>
-          <a href="#">mateus neri</a>
+          <a href="#">
+            <span className={ styles.name }>MATEUS NERI</span>
+            <span className={ styles.function }>web developer</span>
+          </a>
         </div>
 
         <nav>
           <a href="#home">
-            /home
+            Home
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#about">
-            /about
+            About
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#portfolio">
-            /portfolio
+            Portfolio
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#experiments">
-            /experiments
+            Experiments
             <div className={ styles.underline }></div>
           </a>
 
           <a href="#contact">
-            /contact
+            Contact
           </a>
         </nav>
       </div>
