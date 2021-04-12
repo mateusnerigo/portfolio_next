@@ -1,20 +1,21 @@
 const nodemailer = require('nodemailer');
 
-const config = require('../../../config');
 
 export default async function sendMail(req, res) {
+  console.log(process.env.USERMAIL);
+
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: '465',
     auth: {
-      user: config.USERMAIL,
-      pass: config.USERPASSWORD
+      user: process.env.USERMAIL,
+      pass: process.env.USERPASSWORD
     }
   });
 
   await transporter.sendMail({
     from: `${req.body.name} < ${req.body.email} >`,
-    to: config.USERMAIL,
+    to: process.env.USERMAIL,
     replyTo: req.body.email,
     subject: "Contato pelo site | Portfolio",
     text: req.body.message,
