@@ -7,9 +7,9 @@ export function Contact() {
     form.addEventListener('submit', (e) => {
       e.preventDefault()
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+      const name = (document.getElementById('name') as HTMLInputElement).value;
+      const email = (document.getElementById('email') as HTMLInputElement).value;
+      const message = (document.getElementById('message') as HTMLInputElement).value;
 
       form.style.display = "none";
 
