@@ -1,14 +1,34 @@
 .contactContainer {
-  height: unset;
+  /* height: unset; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.contactForm {
-  margin: 0rem auto 2rem;
+.contactForm,
+.loadingMail,
+.successfulMail {
   width: 100%;
 }
 
+.loadingMail,
+.successfulMail {
+  display: none;
+  font-size: 5rem;
+  margin: auto 0px;
+}
+
+.successfulMail {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.successfulMail img {
+  width: 100px;
+}
+
+.contactForm {
+  margin: 0rem auto 2rem;
+}
 .contactForm .contactFormField {
   display: flex;
   flex-direction: column;
