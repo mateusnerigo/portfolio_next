@@ -2,7 +2,7 @@
   position: fixed;
   top: 20px;
   width: 100%;
-  height: 125px;
+  height: 75px;
   margin: 0 auto;
   transition: 0.2s;
 }
@@ -33,7 +33,7 @@
 }
 
 .navbarContainer .logo {
-  flex: 1;
+  flex: 2;
 }
 
 .navbarContainer .logo a {

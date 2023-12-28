@@ -39,7 +39,6 @@ export function Contact() {
       id="contact"
       className={ `container ${styles.contactContainer}` }
     >
-
       <h1 className="sectionTitle">Contact</h1>
 
       <form id="contactForm" className={ styles.contactForm }>

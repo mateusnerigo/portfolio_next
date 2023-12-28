@@ -38,6 +38,16 @@ export function Navbar() {
             <div className={ styles.underline }></div>
           </a>
 
+          <a href="https://github.com/mateusnerigo" target='_blank'>
+            Github
+            <div className={ styles.underline }></div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/mateus-neri-b9130615b/" target='_blank'>
+            Linkedin
+            <div className={ styles.underline }></div>
+          </a>
+
           {/* <a href="#about">
             About
             <div className={ styles.underline }></div>
