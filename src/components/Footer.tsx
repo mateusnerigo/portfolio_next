@@ -4,9 +4,8 @@ export function Footer() {
   return (
     <div className={ styles.footerContainer }>
       <div className={ styles.footerLinks }>
-        <a href="#">fb</a>
-        <a href="#">wpp</a>
-        <a href="#">li</a>
+        <a href="https://github.com/mateusnerigo">Github</a>
+        <a href="https://www.linkedin.com/in/mateus-neri-b9130615b/">Linkedin</a>
       </div>
     </div>
   );

@@ -20,12 +20,12 @@ function App() {
 			<Navbar />
 
 			<Info />
-			<About />
+			{/* <About />
 			<Portfolio />
-			<Experiments />
+			<Experiments /> */}
 			<Contact />
 
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

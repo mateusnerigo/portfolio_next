@@ -22,11 +22,7 @@ export function Contact() {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          name,
-          email,
-          message
-        })
+        body: JSON.stringify({ name, email, message })
       }).then((response) => {
         loadingMail.style.display = "none";
         successfulMail.style.display = "block";

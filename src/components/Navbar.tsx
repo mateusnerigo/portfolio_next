@@ -9,13 +9,12 @@ export function Navbar() {
   function handleScroll() {
     const offset = window.scrollY;
 
+    setNavbarContainerToggle(`${styles.navbarContainer}`)
+    setNavbarToggle(`${styles.navbar}`)
+
     if (offset > 1) {
       setNavbarContainerToggle(`${styles.navbarContainer} ${styles.fixed}`)
       setNavbarToggle(`${styles.navbar} ${styles.fixed}`)
-    }
-    else {
-      setNavbarContainerToggle(`${styles.navbarContainer}`)
-      setNavbarToggle(`${styles.navbar}`)
     }
   }
 
@@ -39,7 +38,7 @@ export function Navbar() {
             <div className={ styles.underline }></div>
           </a>
 
-          <a href="#about">
+          {/* <a href="#about">
             About
             <div className={ styles.underline }></div>
           </a>
@@ -52,7 +51,7 @@ export function Navbar() {
           <a href="#experiments">
             Experiments
             <div className={ styles.underline }></div>
-          </a>
+          </a> */}
 
           <a href="#contact">
             Contact
